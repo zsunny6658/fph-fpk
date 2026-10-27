@@ -5,20 +5,32 @@
     "homepage": "https://github.com/zsunny6658/fph-fpk",
     "distributor": "zsunny",
     "description": "屋事小记：家庭共享的取件小记 / 备忘 / 待还 / 用药打卡与个人待读知识库。飞牛 fnOS fpk 应用包（官方 fnpack 打包），随 Release 发布更新。",
-    "updated_at": "2026-10-27T21:20:00+08:00"
+    "updated_at": "2026-10-27T21:55:00+08:00"
   },
   "apps": {
     "fph": {
       "display_name": "屋事小记",
       "app_type": "native",
       "platform": ["all"],
-      "desc": "家庭共享的取件小记 / 备忘 / 待还 / 用药打卡与个人待读知识库（Node.js 自托管，数据全部留在本机）。飞牛端桌面图标直开（端口 5189），支持开机自启与升级保数据。",
+      "desc": "家庭共享的取件小记 / 备忘 / 待还 / 用药打卡与个人待读知识库。纯前端壳（H5），服务端由用户自部署（NAS Docker / 阿里云 bridge），数据全部留在自己的服务端。桌面图标直开（端口 5189），升级不影响数据。",
       "author": "zsunny",
       "distributor": "zsunny",
       "homepage": "https://github.com/zsunny6658/family-parcel-hub-api",
       "license": "Apache-2.0",
       "icon_url": "https://raw.githubusercontent.com/zsunny6658/family-parcel-hub-api/main/public/icons/icon-512.png",
       "releases": {
+        "0.23.4": {
+          "updated_at": "2026-10-27T21:55:00+08:00",
+          "changelog": "fpk 重构为纯前端壳：移除内置 Node 后端（修复飞牛上启动失败），改 python3 静态托管 H5；安装向导填写服务端地址，页面内可随时修改；体积 11MB→596KB。需自部署服务端（v0.23.4+，支持 CORS 白名单）。",
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/zsunny6658/fph-fpk/releases/download/v0.23.4/fph_0.23.4.fpk",
+              "size": 607912,
+              "size_mb": 0.6,
+              "sha256": "2f0926f3425b8e6b5459e7323babbec643cbec2e8546c0d22cc5b034fa13d10a"
+            }
+          }
+        },
         "0.23.3": {
           "updated_at": "2026-10-27T21:20:00+08:00",
           "changelog": "仓库架构定稿：小程序端拆分独立仓，H5 内置化为主形态；服务端含用药周期状态与提醒去重修复；首个官方 fnpack 规范 fpk，桌面图标独立端口 5189 直开。",
