@@ -19,6 +19,18 @@
       "license": "Apache-2.0",
       "icon_url": "https://raw.githubusercontent.com/zsunny6658/family-parcel-hub-api/main/public/icons/icon-512.png",
       "releases": {
+        "0.23.5": {
+          "updated_at": "2026-10-27T22:35:00+08:00",
+          "changelog": "全端统一 bridge + 自托管登录：登录页可探测服务端能力（capabilities），不支持微信登录的自托管端点自动退化为邮箱密码登录；fpk 向导推荐填写官方 bridge 地址，三端数据一致。",
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/zsunny6658/fph-fpk/releases/download/v0.23.5/fph_0.23.5.fpk",
+              "size": 608223,
+              "size_mb": 0.6,
+              "sha256": "45eda8bc174efd2a007460de36dce401fa5fca6de3d6f6a75267766193af16bc"
+            }
+          }
+        },
         "0.23.4": {
           "updated_at": "2026-10-27T21:55:00+08:00",
           "changelog": "fpk 重构为纯前端壳：移除内置 Node 后端（修复飞牛上启动失败），改 python3 静态托管 H5；安装向导填写服务端地址，页面内可随时修改；体积 11MB→596KB。需自部署服务端（v0.23.4+，支持 CORS 白名单）。",
