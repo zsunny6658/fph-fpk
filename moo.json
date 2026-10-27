@@ -1,0 +1,37 @@
+{
+  "schema_version": "moo",
+  "source_info": {
+    "name": "屋事小记（family-parcel-hub）应用源",
+    "homepage": "https://github.com/zsunny6658/fph-fpk",
+    "distributor": "zsunny",
+    "description": "屋事小记：家庭共享的取件小记 / 备忘 / 待还 / 用药打卡与个人待读知识库。飞牛 fnOS fpk 应用包（官方 fnpack 打包），随 Release 发布更新。",
+    "updated_at": "2026-10-27T21:20:00+08:00"
+  },
+  "apps": {
+    "fph": {
+      "display_name": "屋事小记",
+      "app_type": "native",
+      "platform": ["all"],
+      "desc": "家庭共享的取件小记 / 备忘 / 待还 / 用药打卡与个人待读知识库（Node.js 自托管，数据全部留在本机）。飞牛端桌面图标直开（端口 5189），支持开机自启与升级保数据。",
+      "author": "zsunny",
+      "distributor": "zsunny",
+      "homepage": "https://github.com/zsunny6658/family-parcel-hub-api",
+      "license": "Apache-2.0",
+      "icon_url": "https://raw.githubusercontent.com/zsunny6658/family-parcel-hub-api/main/public/icons/icon-512.png",
+      "releases": {
+        "0.23.3": {
+          "updated_at": "2026-10-27T21:20:00+08:00",
+          "changelog": "仓库架构定稿：小程序端拆分独立仓，H5 内置化为主形态；服务端含用药周期状态与提醒去重修复；首个官方 fnpack 规范 fpk，桌面图标独立端口 5189 直开。",
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/zsunny6658/fph-fpk/releases/download/v0.23.3/fph_0.23.3.fpk",
+              "size": 11027598,
+              "size_mb": 10.5,
+              "sha256": "a873e1e20fbf1eb8e9a1b555256c13941dc3050996d34ea36b7f921cdbb57c45"
+            }
+          }
+        }
+      }
+    }
+  }
+}
